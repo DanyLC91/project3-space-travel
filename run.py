@@ -18,6 +18,59 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('space_travel_data')
 
+#Function to input and select a planet trip
+def trips_options():
+
+    destination = input("Please enter a number between 1 and 8 to find out\
+more about the planet trips: ")
+    #while statement to catch a non valid character and loop till
+    #correct input by user
+    while destination not in ["1", "2", "3", "4", "5", "6", "7", "8"]:
+        destination = input("Invalid destination. Please enter a number\
+between 1 and 8: ")
+
+    #Setting up function to retrieve data from spreadsheet 
+    trip_details = SHEET.worksheet('trip_details')
+    column_names = trip_details.row_values(1)
+    row_data = trip_details.row_values(int(destination) + 1)
+    print(column_names)
+    print(row_data)
+
+    #If/Else selector for planets menu
+    if destination == "1":
+        mercury_text()
+    elif destination == "2":
+        venus_text()
+    elif destination == "3":
+        the_moon_text()
+    elif destination == "4":
+        mars_text()
+    elif destination == "5":
+        jupyter_text()
+    elif destination == "6":
+        saturn_text()
+    elif destination == "7":
+        uranus_text()
+    elif destination == "8":
+        neptune_text()
+
+#Secondary menu choice for user
+    while True:
+        menu_choice = input('''
+            If you would like to see more Planets, please type P.
+            If you would like to go back to the Main Menu, please type E: ''')
+
+        if menu_choice == "P":
+            trips_options()
+            break
+        elif menu_choice == "E":
+            menu()
+            break
+        else:
+            print("Invalid input. Please enter 'P' or 'E'.")
+
+
+
 #Welcome message
 print('''
  
@@ -69,7 +122,8 @@ options (1-6):\n ")
         7. Uranus
         8. Neptune
         ''')
-        availability
+        availability()
+        trips_options()
 
 #FAQs section
     elif choice == "3":
