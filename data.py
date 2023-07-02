@@ -62,3 +62,22 @@ where the boundaries of
         imagination are transcended, and the wonders of the solar system 
 are within your reach.
     ''')
+
+def contact():
+    print('''
+            \033[1mContact\033[0m
+
+            Legal Contact Info for CosmoLink Travel (EU Base):
+            CosmoLink Travel Ltd.
+            123 Astral Avenue 
+            Central City 
+            EU-12345
+            Phone: +XX-XXXX-XXXX 
+            Email: info@cosmolinktravel.eu
+
+
+            Traveler Contact Info:
+
+            CosmoLink Travel Customer Support Phone: +XX-XXXX-XXXX 
+            Email: support@cosmolinktravel.eu
+            ''')

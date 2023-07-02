@@ -39,18 +39,41 @@ def menu():
     choice = input("To navigate our Menu, Please one of the following\
 options (1-6):\n ")
 
+#Back to Main Menu option with input
+    def back_to_menu():
+        choice2 = input("Press 0 to go back to the MENU options")
 
-
+        if choice2 == "0":
+            menu()
+        else:
+            print("Invalid choice. Please try again.")
+            input()
+            menu()    
+#BIO section
     if choice == "1":
         bio()
+        back_to_menu()
+
+#Our Packages section
     elif choice == "2":
+
+#FAQs section
     elif choice == "3":
+        
+#Get Your Tickets section
     elif choice == "4":
+
+#Contact section
     elif choice == "5":
+        contact()
+        back_to_menu()
+
+#Exit the program
     elif choice == "6":
         print("Exiting the program.")
         return
 
+#If character other than 1 t0 6 enter, loop for new input
     else:
         print("Invalid choice. Please try again.")
         menu()
