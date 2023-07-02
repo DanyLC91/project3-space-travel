@@ -3,7 +3,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from data import bio, contact, mercury_text, venus_text, the_moon_text, \
      mars_text, jupyter_text, saturn_text, uranus_text, neptune_text,\
-     availability
+     availability, faqs
 
 
 #Program credentials and setting up link for spreadsheet

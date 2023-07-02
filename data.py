@@ -215,6 +215,42 @@ def availability():
         are subject to change and availability.**
         ''')
 
+#FQAs Function created with just questions
+def faqs():
+    print("\033[1mFAQs\033[0m")
+    print('''
+    1. What type of spacecraft do you use for interplanetary flights?
+    2. Can anyone participate in space travel, or are there any age /
+or health restrictions?
+    3. How long does it take to travel from Earth to different planets /
+in the solar system?
+    4. What kind of training or preparation do travelers undergo /
+before their space journey?
+    5. Do I need to have any prior experience in aviation or space-related /
+activities to book a trip?
+    6. Can I bring personal belongings or souvenirs from space back to Earth?
+    7. How many passengers can your spacecraft accommodate on each trip?
+    8. What is the duration of a typical space travel experience?
+    9. What kind of views can I expect during the journey and while /
+orbiting around the planets?
+    10. Are there any onboard facilities or amenities available during /
+the trip?
+    11. What happens if there is an emergency during the space journey?
+    12. Can I customize my space travel package or itinerary?
+    13. Is there a weight or size limit for personal belongings carried /
+onboard?
+    14. How do you handle medical emergencies or special dietary /
+requirements during the trip?
+    15. Are there any restrictions on photography or recording devices /
+during the journey?
+    16. What happens if there is a delay or cancellation of a scheduled /
+space travel departure?
+    17. Are there any specific regulations or permits required for /
+international travelers?
+    18. How safe is space travel with CosmoLink Travel?
+    19. How far in advance should I book my space travel experience?
+    20 .Can I gift a space travel package to someone else?
+    ''')
 
 #Function to host Contact data
 def contact():
