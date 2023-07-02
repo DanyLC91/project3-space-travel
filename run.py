@@ -3,7 +3,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from data import bio, contact, mercury_text, venus_text, the_moon_text, \
      mars_text, jupyter_text, saturn_text, uranus_text, neptune_text,\
-     availability, faqs
+     availability, faqs, bank
 
 
 #Program credentials and setting up link for spreadsheet
@@ -69,6 +69,7 @@ between 1 and 8: ")
         else:
             print("Invalid input. Please enter 'P' or 'E'.")
 
+
 #FAQs answers function
 def data_faqs():
 
@@ -99,6 +100,25 @@ please type E: ''')
     else:
         print("Invalid input. Please enter a valid number from 1 to 20.")
         data_faqs()
+
+#Price function from a spreadsheet
+def price():
+    chosen_destination = input("Please enter a number between 1 and 8 to\
+select a planet:")
+    while chosen_destination not in ["1", "2", "3", "4", "5", "6", "7", "8"]:
+          chosen_destination = input("Invalid destination. Please enter a \
+number between 1 and 8: ")
+
+    trip_details = SHEET.worksheet('trip_details')
+    column_names = trip_details.row_values(1)
+    row_data = trip_details.row_values(int(chosen_destination) + 1)
+
+    # Retrieve the values of the 1st and 4th columns to display
+    column1_value = row_data[0]
+    column4_value = row_data[3]
+
+    print(column_names[0], ":", column1_value)
+    print(column_names[3], ":", column4_value)
 
 
 #Welcome message
@@ -163,6 +183,7 @@ options (1-6):\n ")
 
 #Get Your Tickets section
     elif choice == "4":
+        bank()
 
 #Contact section
     elif choice == "5":

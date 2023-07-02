@@ -251,6 +251,15 @@ international travelers?
     19. How far in advance should I book my space travel experience?
     20 .Can I gift a space travel package to someone else?
     ''')
+    
+#Bank Details for user Payment
+def bank():
+    print('''
+            Bank Name: Stellar Bank
+            IBAN: GB98STEL12345678901234
+            BIC: STBKGB22XXX
+            Account Holder: CosmoLink Travel Agency
+          ''')
 
 #Function to host Contact data
 def contact():
