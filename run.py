@@ -69,6 +69,36 @@ between 1 and 8: ")
         else:
             print("Invalid input. Please enter 'P' or 'E'.")
 
+#FAQs answers function
+def data_faqs():
+
+#FAQs answers are stored in a spreadsheet
+    answers_faqs = SHEET.worksheet('answers')
+#User input to fetch correct answer data
+    choice = input("Please enter a number from 1 to 20 to fetch the \
+corresponding cell value: ")
+    if choice.isdigit() and 1 <= int(choice) <= 20:
+        row_data = answers_faqs.row_values(int(choice))
+        print(row_data)
+        #While statement to give use an option to see more answers
+        #or to go back to main menu
+        while True:
+            choice1 = input('''
+                    If you would like to see more Answers, please type A.
+                    If you would like to go back to the Main Menu,\
+please type E: ''')
+
+            if choice1 == "A":
+                data_faqs()
+                break
+            elif choice1 == "E":
+                menu()
+                break
+            else:
+                print("Invalid input. Please enter 'A' or 'E'.")
+    else:
+        print("Invalid input. Please enter a valid number from 1 to 20.")
+        data_faqs()
 
 
 #Welcome message
@@ -128,6 +158,7 @@ options (1-6):\n ")
 #FAQs section
     elif choice == "3":
         faqs()
+        data_faqs()
         back_to_menu()
 
 #Get Your Tickets section
