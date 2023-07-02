@@ -69,9 +69,12 @@ options (1-6):\n ")
         7. Uranus
         8. Neptune
         ''')
+        availability
 
 #FAQs section
     elif choice == "3":
+        faqs()
+        back_to_menu()
 
 #Get Your Tickets section
     elif choice == "4":
