@@ -63,6 +63,152 @@ where the boundaries of
 are within your reach.
     ''')
 
+#Fuction to host planets trips description
+def mercury_text():
+    print('''Trip to Mercury
+        
+        
+        Experience the scorching beauty of Mercury, the closest planet to \
+the Sun.
+        This 15-day journey will take you on an incredible adventure as you \
+orbit
+        around Mercury for two days. Witness its rugged terrain, \
+captivating craters,
+        and mesmerizing sunsets. Immerse yourself in the mysteries of this \
+unique 
+        planet while our expert guides provide fascinating insights into \
+its geological
+        wonders. Don't miss the chance to embark on this extraordinary \
+journey for $18,000.
+        ''')
+
+
+def venus_text():
+    print('''Trip to Venus
+        
+        
+        Embark on a 20-day expedition to the enchanting world of Venus. /
+Discover 
+        the planet's thick atmosphere, swirling clouds, and volcanic /
+landscapes during
+        a three-day orbit around Venus. Marvel at its intense beauty and /
+learn about its 
+        intriguing climate and geological features from our knowledgeable /
+guides. This 
+        exclusive package is available for $22,500, offering an /
+unforgettable Venusian 
+        experience.
+        ''')
+
+
+def the_moon_text():
+    print('''Trip to the Moon
+        
+        
+        Experience the closest celestial neighbor like never before with /
+our 7-day Moon 
+        Adventure Package. Witness the magnificence of Earth's Moon during /
+a one-day 
+        orbit, observing its majestic craters, lunar landscapes, and the /
+Earth-rise from 
+        a unique vantage point. Delve into the history of lunar exploration /
+and enjoy the 
+        tranquility of space. This lunar escapade is priced at $12,000, /
+providing an 
+        incredible journey to our celestial companion.
+        ''')
+
+
+def mars_text():
+    print('''Trip to Mars
+        
+        
+        Embark on the ultimate Martian adventure with our 90-day Mars \
+Expedition Package. 
+        Experience the Red Planet like a true explorer during a \
+seven-day orbit 
+        around Mars. Marvel at its rusty terrain, towering volcanoes,\
+and deep canyons. 
+        Engage in immersive activities like rover excursions and geological\
+explorations 
+        led by our expert team. This extraordinary journey to Mars is\
+available for 
+        $75,000, offering an unparalleled interplanetary experience.
+        ''')
+
+
+def jupyter_text():
+    print('''Trip to Jupiter
+        
+        
+        Unveil the secrets of the gas giant with our 120-day Jupiter /
+Discovery Package. 
+        Orbit around Jupiter for an exhilarating 14 days and witness its /
+iconic bands, 
+        colossal storms, and mesmerizing auroras. Immerse yourself in the /
+wonders of this 
+        giant planet, while our knowledgeable guides provide captivating /
+insights into 
+        its complex atmosphere and unique features. This exclusive journey /
+to Jupiter is 
+        priced at $120,000, promising an unforgettable cosmic experience.
+        ''')
+
+
+def saturn_text():
+    print('''Trip to Saturn
+        
+        
+        Embark on a mesmerizing 150-day journey to the majestic planet /
+Saturn. Experience 
+        the awe-inspiring beauty of its iconic rings during a 21-day orbit /
+around Saturn. 
+        Marvel at the intricate ring structure, explore its numerous moons, /
+and witness 
+        the planet's unique atmospheric features. Our expert guides will /
+provide captivating 
+        commentary, enriching your understanding of this gas giant. Don't /
+miss this 
+        extraordinary adventure, priced at $150,000.
+        ''')
+
+
+def uranus_text():
+    print('''Trip to Uranus
+        
+        
+        Embark on a once-in-a-lifetime 200-day expedition to the /
+mysterious planet Uranus. 
+        Experience the awe-inspiring blue-green atmosphere and witness its /
+unique sideways 
+        rotation during a 30-day orbit around Uranus. Explore its icy moons, /
+observe its complex 
+        weather patterns, and delve into the wonders of this distant giant. /
+Our experienced 
+        guides will accompany you on this extraordinary journey. The Uranus /
+Odyssey Package 
+        is priced at $180,000.
+        ''')
+
+
+def neptune_text():
+    print('''Trip to Neptune
+        
+        
+        Dive into the depths of the icy blue planet Neptune with our /
+exclusive 250-day 
+        Deep Dive Package. Orbit around Neptune for 40 days and immerse /
+yourself in its 
+        captivating atmosphere, swirling storms, and stunning cloud /
+formations. Witness the distant 
+        beauty of its moons and gain insights into the mysteries of this /
+outermost planet of 
+        the solar system. The Neptune Deep Dive Package is available /
+for $200,000, offering a 
+        truly extraordinary interplanetary adventure.
+        ''')
+
+#Function to host Contact data
 def contact():
     print('''
             \033[1mContact\033[0m
