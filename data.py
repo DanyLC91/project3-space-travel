@@ -208,6 +208,14 @@ for $200,000, offering a
         truly extraordinary interplanetary adventure.
         ''')
 
+#Availability fuction
+def availability():
+    print('''
+        **Please note that the package durations and prices mentioned bellow 
+        are subject to change and availability.**
+        ''')
+
+
 #Function to host Contact data
 def contact():
     print('''

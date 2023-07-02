@@ -2,7 +2,8 @@
 import gspread
 from google.oauth2.service_account import Credentials
 from data import bio, contact, mercury_text, venus_text, the_moon_text, \
-     mars_text, jupyter_text, saturn_text, uranus_text, neptune_text,
+     mars_text, jupyter_text, saturn_text, uranus_text, neptune_text,\
+     availability
 
 
 #Program credentials and setting up link for spreadsheet
@@ -42,7 +43,7 @@ options (1-6):\n ")
 
 #Back to Main Menu option with input
     def back_to_menu():
-        choice2 = input("Press 0 to go back to the MENU options")
+        choice2 = input("Press 0 to go back to the MENU options\n")
 
         if choice2 == "0":
             menu()
