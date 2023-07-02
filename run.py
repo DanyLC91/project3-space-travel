@@ -1,7 +1,8 @@
 #All the imports for the program
 import gspread
 from google.oauth2.service_account import Credentials
-from data import bio
+from data import bio, contact, mercury_text, venus_text, the_moon_text, \
+     mars_text, jupyter_text, saturn_text, uranus_text, neptune_text,
 
 
 #Program credentials and setting up link for spreadsheet
@@ -56,10 +57,21 @@ options (1-6):\n ")
 
 #Our Packages section
     elif choice == "2":
+        print("\033[1m Our Packages \033[0m")
+        print('''      
+        1. Mercury
+        2. Venus
+        3. The Moon
+        4. Mars
+        5. Jupiter
+        6. Saturn
+        7. Uranus
+        8. Neptune
+        ''')
 
 #FAQs section
     elif choice == "3":
-        
+
 #Get Your Tickets section
     elif choice == "4":
 
