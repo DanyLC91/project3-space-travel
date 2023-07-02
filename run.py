@@ -1,6 +1,7 @@
 #All the imports for the program
 import gspread
 from google.oauth2.service_account import Credentials
+from data import bio
 
 
 #Program credentials and setting up link for spreadsheet
@@ -37,5 +38,24 @@ def menu():
 
     choice = input("To navigate our Menu, Please one of the following\
 options (1-6):\n ")
+
+
+
+    if choice == "1":
+        bio()
+    elif choice == "2":
+    elif choice == "3":
+    elif choice == "4":
+    elif choice == "5":
+    elif choice == "6":
+        print("Exiting the program.")
+        return
+
+    else:
+        print("Invalid choice. Please try again.")
+        menu()
+
+
+menu()
 
 
