@@ -137,44 +137,44 @@ class Passenger:
         self.postCode = ""
         self.phoneNumber = ""
         self.dateOfTravel = None
-    
-    #Get fucntion for user input
-        def get_details(self):
-             while True:
-                self.name = input("Enter passenger name: ")
-                self.lastName = input("Enter passenger last name: ")
-                date_of_birth = input("Enter passenger date of birth\
-    (DD-MM-YYYY): ")
-                self.gender = input("Enter passenger gender: ")
-                self.addressLine1 = input("Enter passenger home address line\
-                    1: ")
-                self.addressLine2 = input("Enter passenger home address line\
-                    2: ")
-                self.cityTown = input("Enter passenger city or town: ")
-                self.countyProvince = input("Enter passenger province: ")
-                self.country = input("Enter passenger county: ")
-                self.postCode = input("Enter passenger post code: ")
-                phone_number = input("Enter passenger phone number: ")
-                date_of_travel = input("Enter passenger date of travel\
-    (DD-MM-YYYY): ")
+
+# #Get fucntion for user input
+    def get_details(self):
+        while True:
+            self.name = input("Enter passenger name: ")
+            self.lastName = input("Enter passenger last name: ")
+            date_of_birth = input("Enter passenger date of birth\
+(DD-MM-YYYY): ")
+            self.gender = input("Enter passenger gender: ")
+            self.addressLine1 = input("Enter passenger home address line\
+                 1: ")
+            self.addressLine2 = input("Enter passenger home address line\
+                 2: ")
+            self.cityTown = input("Enter passenger city or town: ")
+            self.countyProvince = input("Enter passenger province: ")
+            self.country = input("Enter passenger county: ")
+            self.postCode = input("Enter passenger post code: ")
+            phone_number = input("Enter passenger phone number: ")
+            date_of_travel = input("Enter passenger date of travel\
+(DD-MM-YYYY): ")
 
         #try/except method use for date input of valid date format
         #If input failed, it will ask for new input
-             try:
+            try:
                 self.dateOfBirth = datetime.datetime.strptime \
                     (date_of_birth, "%d-%m-%Y").date()
                 self.phoneNumber = int(phone_number)
                 self.dateOfTravel = datetime.datetime.strptime \
                     (date_of_travel, "%d-%m-%Y").date()
-             except ValueError:
+            except ValueError:
                 print("Invalid input. Please enter numeric values.")
                 choice = input("Do you want to re-enter the details?\
 (y/n): ")
                 if choice.lower() != "y":
-                   break
+                    break
                 continue
 
-             break
+            break
 
        #Fuction to save user input into the spreadsheet     
         def save_to_spreadsheet(self):
