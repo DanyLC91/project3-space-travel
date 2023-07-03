@@ -175,7 +175,7 @@ class Passenger:
                 continue
 
             break
-            
+
        #Fuction to save user input into the spreadsheet     
        def save_to_spreadsheet(self):
         worksheet = SHEET.sheet1
@@ -184,6 +184,20 @@ class Passenger:
                    self.cityTown, self.countyProvince, self.country,
                    self.postCode, self.phoneNumber, str(self.dateOfTravel)]
         worksheet.append_row(new_row)
+
+#Confirmation function to display saved info
+def confirmation():
+    confirmation_sheet = SHEET.worksheet('passenger')
+    all_data = confirmation_sheet.get_all_values()
+
+    if len(all_data) >= 2:
+        column_names = all_data[0]
+        last_row_data = all_data[-1]
+
+        for header, value in zip(column_names, last_row_data):
+            print(f"{header}: {value}")
+    else:
+        print("No data available.")
 
 
 #Welcome message
