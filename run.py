@@ -171,7 +171,7 @@ class Passenger:
                 choice = input("Do you want to re-enter the details?\
 (y/n): ")
                 if choice.lower() != "y":
-                    break
+                   break
                 continue
 
              break
