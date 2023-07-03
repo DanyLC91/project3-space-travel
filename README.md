@@ -27,14 +27,19 @@ The app provides a user-friendly menu system that allows users to interact with 
 
 1. #### Bio: 
 This option provides users with information about the space agency and its mission. 
+
 2. #### Our Trips
  Users can select this option to explore the available space travel packages offered by the agency. The menu provides a detailed list of packages, including destinations, durations, and prices. Users can get an overview of the exciting space journeys they can embark on.
+
 3. #### FAQs
 The Frequently Asked Questions (FAQs) section aims to address common queries and concerns of users. Users can find valuable information to make informed decisions about their space travel experience.
+
 4. #### Get your Tickets
  By selecting this option, users will be guided through a step-by-step process to select their desired trip, provide personal details, and get details for the necessary payment.
+
 5. #### Contacts
 Users can access the contact information of the space agency through this menu option.
+
 6. #### Exit
 This option will terminate the program.
 
