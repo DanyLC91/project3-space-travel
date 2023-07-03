@@ -24,7 +24,7 @@ This project was created for Code Institute Project 3.
 The menu system is designed to provide a seamless and intuitive user experience. It guides users through the available options, validates their inputs, and performs the necessary actions based on their selections.
 The app provides a user-friendly menu system that allows users to interact with various functionalities offering the following features:
 
-![Menu](readme_images/our_packages.jpg)
+![Menu](readme_images/main_menu.jpg)
 
 1. #### Bio: 
 This option provides users with information about the space agency and its mission. 
@@ -32,11 +32,19 @@ This option provides users with information about the space agency and its missi
 2. #### Our Trips
  Users can select this option to explore the available space travel packages offered by the agency. The menu provides a detailed list of packages, including destinations, durations, and prices. Users can get an overview of the exciting space journeys they can embark on.
 
+![Our_Packages](readme_images/our_packages.jpg)
+
 3. #### FAQs
 The Frequently Asked Questions (FAQs) section aims to address common queries and concerns of users. Users can find valuable information to make informed decisions about their space travel experience.
 
+![FAQs](readme_images/FAQ_s.jpg)
+
 4. #### Get your Tickets
  By selecting this option, users will be guided through a step-by-step process to select their desired trip, provide personal details, and get details for the necessary payment.
+This section has an age restriction function that determines accordingly to the user's age, if they are fit for traveling or not. When age enters, the app will either end or allow the user to continue to the next steps.
+
+![Age_Fail](readme_images/age_failed.jpg)
+![Age_Pass](readme_images/age_failed.jpg)
 
 5. #### Contacts
 Users can access the contact information of the space agency through this menu option.
