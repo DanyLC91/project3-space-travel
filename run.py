@@ -175,6 +175,16 @@ class Passenger:
                 continue
 
             break
+            
+       #Fuction to save user input into the spreadsheet     
+       def save_to_spreadsheet(self):
+        worksheet = SHEET.sheet1
+        new_row = [self.name, self.lastName, str(self.dateOfBirth),
+                   self.gender, self.addressLine1, self.addressLine2,
+                   self.cityTown, self.countyProvince, self.country,
+                   self.postCode, self.phoneNumber, str(self.dateOfTravel)]
+        worksheet.append_row(new_row)
+
 
 #Welcome message
 print('''
