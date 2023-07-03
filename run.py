@@ -158,6 +158,24 @@ class Passenger:
             date_of_travel = input("Enter passenger date of travel\
 (DD-MM-YYYY): ")
 
+        #try/except method use for date input of valid date format
+        #If input failed, it will ask for new input
+            try:
+                self.dateOfBirth = datetime.datetime.strptime \
+                    (date_of_birth, "%d-%m-%Y").date()
+                self.phoneNumber = int(phone_number)
+                self.dateOfTravel = datetime.datetime.strptime \
+                    (date_of_travel, "%d-%m-%Y").date()
+            except ValueError:
+                print("Invalid input. Please enter numeric values.")
+                choice = input("Do you want to re-enter the details?\
+(y/n): ")
+                if choice.lower() != "y":
+                    break
+                continue
+
+            break
+
 #Welcome message
 print('''
  
