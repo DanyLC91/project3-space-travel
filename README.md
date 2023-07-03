@@ -19,6 +19,12 @@ This project was created for Code Institute Project 3.
 ## Features
 
 
+
+The run.py file serves as the entry point of the program. It handles user interaction, such as displaying menu options and gathering user input. The program flow is controlled using loops and conditional statements to ensure a smooth and intuitive user experience.
+The gspread library is used to establish a connection with the Google Sheets API. It requires the creds.json file, which contains the necessary credentials for authentication and access to the Google Sheets spreadsheet.
+
+
+
 ### Menu Option
 
 The menu system is designed to provide a seamless and intuitive user experience. It guides users through the available options, validates their inputs, and performs the necessary actions based on their selections.
@@ -44,7 +50,7 @@ The Frequently Asked Questions (FAQs) section aims to address common queries and
 This section has an age restriction function that determines accordingly to the user's age, if they are fit for traveling or not. When age enters, the app will either end or allow the user to continue to the next steps.
 
 ![Age_Fail](readme_images/age_failed.jpg)
-![Age_Pass](readme_images/age_failed.jpg)
+![Age_Pass](readme_images/age_aproved.jpg)
 
 5. #### Contacts
 Users can access the contact information of the space agency through this menu option.
@@ -53,6 +59,13 @@ Users can access the contact information of the space agency through this menu o
 This option will terminate the program.
 
 
+
+### Spreadsheet Usage
+
+The app retrieve stored data info, trip details, and store passenger information efficiently by the use of Google Sheets.
+
+![FAQs_answers](readme_images/FAQS_answers.jpg)
+![Passenger_info](readme_images/planets_info.jpg)
 
 ### Trip Booking
 
@@ -68,6 +81,7 @@ Users can book a space trip by selecting a destination from a list of eight plan
 
 The passenger information is securely stored in a Google Sheets spreadsheet. The program utilizes the gspread library to establish a connection with the Google Sheets API. It creates a worksheet named "passenger" to store the passenger data. Each row in the spreadsheet represents a passenger, and the columns correspond to different attributes. When a user books a trip, the program appends a new row with the passenger's information to the spreadsheet. This ensures that the data is organized and easily accessible for future reference.
 
+![Passenger](readme_images/passengers_details.jpg)
 
 
 ### Details Confirmation
@@ -76,7 +90,11 @@ The passenger information is securely stored in a Google Sheets spreadsheet. The
 
 To review the most recent passenger information, the program allows users to retrieve the last row of saved data from the Google Sheets spreadsheet. This feature ensures that users can easily access the latest entries and verify their details or track the most recent bookings made.
 
+
+
 ### Data.py
+
+
 
 As there was much information and text for this app, to keep a tidy structure, a secondary Python file was created to host all functions that were hosting big pieces of text.
 These functions were then imported and used in the main app file run.py.
