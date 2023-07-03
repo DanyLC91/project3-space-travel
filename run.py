@@ -4,6 +4,7 @@ from google.oauth2.service_account import Credentials
 from data import bio, contact, mercury_text, venus_text, the_moon_text, \
      mars_text, jupyter_text, saturn_text, uranus_text, neptune_text,\
      availability, faqs, bank
+import datetime
 
 
 #Program credentials and setting up link for spreadsheet
@@ -120,6 +121,22 @@ number between 1 and 8: ")
     print(column_names[0], ":", column1_value)
     print(column_names[3], ":", column4_value)
 
+#Passenger object to gather and save user input
+class Passenger:
+
+    def __init__(self):
+        self.name = ""
+        self.lastName = ""
+        self.dateOfBirth = None
+        self.gender = ""
+        self.addressLine1 = ""
+        self.addressLine2 = ""
+        self.cityTown = ""
+        self.countyProvince = ""
+        self.country = ""
+        self.postCode = ""
+        self.phoneNumber = ""
+        self.dateOfTravel = None
 
 #Welcome message
 print('''
