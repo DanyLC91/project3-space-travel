@@ -262,7 +262,29 @@ options (1-6):\n ")
 
 #Get Your Tickets section
     elif choice == "4":
-        bank()
+
+        #Elegibility input to determine if user can travel
+        eligibility = int(input("Please state your age:"))
+        if 25 <= eligibility <= 60:
+            print("Congratulations! You are eligible to travel with us.")
+            my_object = Passenger()
+            my_object.get_details()
+            my_object.save_to_spreadsheet()
+            price()
+            print()
+            print("Thank you for booking your trip with us. Here are your\
+confirmation details:")
+            print()
+            confirmation()
+            print()
+            print("Please deposit your payment at the following  details")
+            bank()
+            print()
+            print("Thank you for your visit!")
+        else:
+            print("Sorry! Sadly your age is not within the acceptable\
+range for travel.")
+            print("Thank you for your visit!")
 
 #Contact section
     elif choice == "5":
@@ -279,7 +301,4 @@ options (1-6):\n ")
         print("Invalid choice. Please try again.")
         menu()
 
-
 menu()
-
-
