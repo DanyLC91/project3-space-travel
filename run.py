@@ -23,12 +23,12 @@ SHEET = GSPREAD_CLIENT.open('space_travel_data')
 def trips_options():
 
     destination = input("Please enter a number between 1 and 8 to find out\
-more about the planet trips: ")
+more about the planet trips:\n ")
     #while statement to catch a non valid character and loop till
     #correct input by user
     while destination not in ["1", "2", "3", "4", "5", "6", "7", "8"]:
         destination = input("Invalid destination. Please enter a number\
-between 1 and 8: ")
+between 1 and 8: \n")
 
     #Setting up function to retrieve data from spreadsheet 
     trip_details = SHEET.worksheet('trip_details')
@@ -59,7 +59,7 @@ between 1 and 8: ")
     while True:
         menu_choice = input('''
             If you would like to see more Planets, please type P.
-            If you would like to go back to the Main Menu, please type E: ''')
+            If you would like to go back to the Main Menu, please type E: \n ''')
 
         if menu_choice == "P":
             trips_options()
@@ -78,7 +78,7 @@ def data_faqs():
     answers_faqs = SHEET.worksheet('answers')
 #User input to fetch correct answer data
     choice = input("Please enter a number from 1 to 20 to fetch the \
-corresponding cell value: ")
+corresponding cell value: \n")
     if choice.isdigit() and 1 <= int(choice) <= 20:
         row_data = answers_faqs.row_values(int(choice))
         print(row_data)
@@ -105,10 +105,10 @@ please type E: ''')
 #Price function from a spreadsheet
 def price():
     chosen_destination = input("Please enter a number between 1 and 8 to\
-select a planet:")
+select a planet:\n")
     while chosen_destination not in ["1", "2", "3", "4", "5", "6", "7", "8"]:
           chosen_destination = input("Invalid destination. Please enter a \
-number between 1 and 8: ")
+number between 1 and 8: \n")
 
     trip_details = SHEET.worksheet('trip_details')
     column_names = trip_details.row_values(1)
@@ -141,22 +141,22 @@ class Passenger:
 # #Get fucntion for user input
     def get_details(self):
         while True:
-            self.name = input("Enter passenger name: ")
-            self.lastName = input("Enter passenger last name: ")
+            self.name = input("Enter passenger name: \n")
+            self.lastName = input("Enter passenger last name:\n ")
             date_of_birth = input("Enter passenger date of birth\
-(DD-MM-YYYY): ")
-            self.gender = input("Enter passenger gender: ")
+(DD-MM-YYYY): \n")
+            self.gender = input("Enter passenger gender:\n ")
             self.addressLine1 = input("Enter passenger home address line\
-                 1: ")
+                 1: \n")
             self.addressLine2 = input("Enter passenger home address line\
-                 2: ")
-            self.cityTown = input("Enter passenger city or town: ")
-            self.countyProvince = input("Enter passenger province: ")
-            self.country = input("Enter passenger county: ")
-            self.postCode = input("Enter passenger post code: ")
-            phone_number = input("Enter passenger phone number: ")
+                 2:\n ")
+            self.cityTown = input("Enter passenger city or town:\n ")
+            self.countyProvince = input("Enter passenger province: \n")
+            self.country = input("Enter passenger county: \n")
+            self.postCode = input("Enter passenger post code:\n ")
+            phone_number = input("Enter passenger phone number:\n ")
             date_of_travel = input("Enter passenger date of travel\
-(DD-MM-YYYY): ")
+(DD-MM-YYYY):\n ")
 
         #try/except method use for date input of valid date format
         #If input failed, it will ask for new input
@@ -169,7 +169,7 @@ class Passenger:
             except ValueError:
                 print("Invalid input. Please enter numeric values.")
                 choice = input("Do you want to re-enter the details?\
-(y/n): ")
+(y/n):\n ")
                 if choice.lower() != "y":
                     break
                 continue
@@ -264,7 +264,7 @@ options (1-6):\n ")
     elif choice == "4":
 
         #Elegibility input to determine if user can travel
-        eligibility = int(input("Please state your age:"))
+        eligibility = int(input("Please state your age: \n"))
         if 25 <= eligibility <= 60:
             print("Congratulations! You are eligible to travel with us.")
             my_object = Passenger()
