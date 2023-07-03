@@ -24,7 +24,7 @@ This project was created for Code Institute Project 3.
 The menu system is designed to provide a seamless and intuitive user experience. It guides users through the available options, validates their inputs, and performs the necessary actions based on their selections.
 The app provides a user-friendly menu system that allows users to interact with various functionalities offering the following features:
 
-![Menu]{/workspace/project3-space-travel/readme_images/main_menu.jpg}
+![Menu](/workspace/project3-space-travel/readme_images/main_menu.jpg)
 
 1. #### Bio: 
 This option provides users with information about the space agency and its mission. 
